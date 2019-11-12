@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="assets/js/app.js"></script>
+
+    <title>Project1</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <!-- Our brand / logo -->
+            <a class="navbar-brand" href="#">The Property Look-up Tool</a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarNavDropdown"
+              aria-controls="navbarNavDropdown"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <!-- Collapsible button -->
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="navbar-nav ml-auto">
+                <!-- The links of our navbar -->
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+    
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Features</a>
+                </li>
+    
+                <!-- a Dropdown menu -->
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    id="navbarDropdownMenuLink"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                  >
+                    Dropdown
+                  </a>
+    
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="#">About Us</a>
+                    <a class="dropdown-item" href="#">Team</a>
+                    <a class="dropdown-item" href="#">Contact Us</a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </nav>
+
+
+          <div class="jumbotron">
+            <h1> Property Look-up Tool</h1>
+            <hr>
+            <h4> Use the Estated API to get information for your property!</h4>
+          </div>
+
+
+          <div class="row" >
+            <div class="col-lg-3">
+                <div class="card">
+                <form>
+                    <label for="address-input">Search your address here</label>
+                    
+                    <input type="text" name="street-input" placeholder="123 Main st." id="property-street">
+                    <input type="text" name="city-input" placeholder="Philadelphia" id="property-city">
+                    <input type="text" name="state-input" placeholder="PA" id="property-state">
+                    <input type="text" name="zip-input" placeholder="19128" id="property-zip">
+                    <br>
+                    <button type="submit" class="btn-sm btn-warning" id="address-lookup-btn">Look-up</button>
+                </form>
+            </div>
+            </div>
+            <div class="col-lg-9" style="color: black">
+                <div class="card">
+                    <h4>Property Information</h4>
+                    <hr>
+                    <div class="card-body" id="property-info-data">
+                        
+                    </div>
+                </div>
+            </div>
+
+
+
+
+          </div>
+
+
+
+
+    </div>
+
+
+</body>
+
+</html>
