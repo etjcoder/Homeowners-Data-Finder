@@ -1,0 +1,54 @@
+body {
+    background-image: url(../images/Sweet_Home_Background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat
+}
+
+h1 {
+    font-family: 'Caveat', cursive;
+    font-size: 80px;
+    text-align: center;
+    margin-top: 15px;
+    color: black;
+}
+
+h2 {
+    font-size: 45px;
+    text-align: center;
+    color: darkgreen;
+    font-family: 'Caveat', cursive;
+}
+
+.card {
+    text-align:center;
+    border-color: black;
+    background-color: white;
+    opacity: 0.9;
+    margin-bottom: 50px
+}
+
+#jumbo-card {
+    opacity: 0.75
+}
+
+.card-title {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 22px;
+    padding: 10px;
+    background-color: black;
+    color: white;
+}
+
+#search-title {
+    font-size: 18px;
+}
+
+.btn:hover {
+    background-color: black;
+    color: white;
+    border: none;
+}
+
+#property-info-data {
+    text-align: left
+}
